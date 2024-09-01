@@ -12,11 +12,11 @@ export default {
     <main class="conteudo-principal">
         <section>
             <span class="subtitulo-lg sua-lista-texto">
-                Sua lista:
+                Your list:
             </span>
 
             <ul class="ingredientes-sua-lista">
-                <li v-for="ingrediente in ingredientes">
+                <li v-for="ingrediente in ingredientes" :key="ingrediente"  class="ingrediente"> <!--    :key="" is equal to v-bind:key=""      -->
                     {{ ingrediente }}
                 </li>
                 
